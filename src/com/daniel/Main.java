@@ -6,9 +6,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-//        arrayPrinter();
-//        threeLargestDigits();
-        specialStuff();
+        arrayPrinter();
+        threeLargestDigits();
+//        specialStuff();
 
     }
 
@@ -56,47 +56,47 @@ public class Main {
         System.out.println("The highest digits in the array are: " + highestDigits);
     }
 
-    static void specialStuff() {
-
-        // First two arrays
-        ArrayList<Integer> array1 = arrayGen();
-        ArrayList<Integer> array2 = arrayGen();
-        System.out.println("Array1: " + array1);
-        System.out.println("Array2: " + array2);
-
-        ArrayList<Integer> specialArr = new ArrayList<>();
-        for (int i = 0; i < 10; i++) {
-            specialArr.add(-1);
-        }
-
-        for (int num1 : array1)
-
-            for (int num2 : array2)
-                if (num1 == num2)
-                    break;
-                else
-                    for (int i = 0; i < specialArr.size(); i++)
-                        if (specialArr.get(i) != -1) {
-                            specialArr.set(i, num1);
-                            break;
-                        }
-
-
-        for (int num1 : array2)
-
-            for (int num2 : array1)
-                if (num1 == num2)
-                    break;
-                else
-                    for (int i = 0; i < specialArr.size(); i++)
-                        if (specialArr.get(i) != -1) {
-                            specialArr.set(i, num1);
-                            break;
-                        }
-
-
-        System.out.println("Special array: " + specialArr);
-
-    }
+//    static void specialStuff() {
+//
+//        // First two arrays
+//        ArrayList<Integer> array1 = arrayGen();
+//        ArrayList<Integer> array2 = arrayGen();
+//        System.out.println("Array1: " + array1);
+//        System.out.println("Array2: " + array2);
+//
+//        ArrayList<Integer> specialArr = new ArrayList<>();
+//        for (int i = 0; i < 10; i++) {
+//            specialArr.add(-1);
+//        }
+//
+//        for (int num1 : array1)
+//
+//            for (int num2 : array2)
+//                if (num1 == num2)
+//                    break;
+//                else
+//                    for (int i = 0; i < specialArr.size(); i++)
+//                        if (specialArr.get(i) != -1) {
+//                            specialArr.set(i, num1);
+//                            break;
+//                        }
+//
+//
+//        for (int num1 : array2)
+//
+//            for (int num2 : array1)
+//                if (num1 == num2)
+//                    break;
+//                else
+//                    for (int i = 0; i < specialArr.size(); i++)
+//                        if (specialArr.get(i) != -1) {
+//                            specialArr.set(i, num1);
+//                            break;
+//                        }
+//
+//
+//        System.out.println("Special array: " + specialArr);
+//
+//    }
 
 }
