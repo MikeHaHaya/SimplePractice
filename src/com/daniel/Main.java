@@ -56,6 +56,7 @@ public class Main {
         System.out.println("The highest digits in the array are: " + highestDigits);
     }
 
+    // Creates a distinct array fir numbers
     static void specialStuff() {
 
         // First two arrays
